@@ -61,7 +61,7 @@ function App() {
   return (
     <div
       id="drum-machine"
-      className="flex gap-5 border-4 border-red-700 p-5 rounded-lg relative"
+      className="flex flex-col md:flex-row gap-5 border-4 border-red-700 p-5 rounded-lg relative"
     >
       <div className="pad-bank grid grid-cols-3 gap-2">
         {keys.map((k) => (
@@ -78,15 +78,14 @@ function App() {
         ))}
       </div>
 
-      <a
-        className="flex logo absolute top-2 right-5 uppercase font-bold"
-        href="https://www.freecodecamp.org/"
-        target="_blank"
-      >
-        FCC &nbsp; <LiaFreeCodeCamp size={28} />
-      </a>
-
-      <div className="controls flex flex-col items-center justify-around w-[200px]">
+      <div className="controls flex flex-col items-center justify-between md:justify-around h-[300px] md:w-[200px] relative">
+        <a
+          className="flex logo absolute -top-4 -right-4 uppercase font-bold"
+          href="https://www.freecodecamp.org/"
+          target="_blank"
+        >
+          FCC &nbsp; <LiaFreeCodeCamp size={28} />
+        </a>
         <Toggle
           label="Power"
           handler={(e: FormEvent<HTMLInputElement>) =>
