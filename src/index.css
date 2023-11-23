@@ -1,3 +1,33 @@
+@import './components/toggle.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-slate-300;
+}
+
+.dark body {
+  @apply bg-slate-900;
+}
+
+#drum-machine {
+  @apply bg-blue-300 shrink-0;
+}
+
+.dark #drum-machine {
+  @apply bg-black text-red-700;
+}
+
+.dark #display {
+  @apply bg-slate-800;
+}
+
+.active {
+  @apply bg-orange-500 text-black border-yellow-300 border-4;
+}
+
+.dark .active {
+  @apply animate-ping;
+}
