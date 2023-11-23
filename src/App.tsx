@@ -84,7 +84,8 @@ function App() {
           href="https://www.freecodecamp.org/"
           target="_blank"
         >
-          FCC &nbsp; <LiaFreeCodeCamp size={28} />
+          FCC&nbsp;
+          <LiaFreeCodeCamp size={28} />
         </a>
         <Toggle
           label="Power"
